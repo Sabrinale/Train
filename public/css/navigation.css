@@ -1,0 +1,123 @@
+/* Styles for mixed menu  */
+
+ul{
+  list-style-type: none;
+}
+.single-nav2{
+	position: relative;
+}
+
+/*.single-nav{
+	position: relative;
+}*/
+
+.single-nav li{
+	flex: 0 0 auto;
+	margin:.5em;
+	font-size: 1.5em;
+	text-decoration: underline;
+
+}
+
+.social-nav li{
+	flex: 0 0 auto;
+	margin:.5em;
+	font-size: 1.5em;
+	text-decoration: underline;
+
+}
+
+.single-nav a:hover{
+	background-color: white;
+	color: black;
+}
+
+.social-nav a:hover{
+	background-color: white;
+	color: black;
+}
+/*mobile menu icon*/
+nav a.mobile_menu{
+	width: 32px;
+	height: 32px;
+	background: url(icon_menu.svg) no-repeat 0 0;
+	background-size: contain;
+	position: absolute;
+	left: 95%;
+	margin-left: -16px;
+	display: none;
+}
+/*end of mobile icon*/
+
+.menu-section{
+	background-color: hsla(46, 100%, 50%, .8);
+	min-height:140px; 
+	position: relative;
+	}
+
+.logo{
+	position: absolute;
+	width:130px;
+	height: 130px;
+	left:25px;
+
+}
+
+ @media screen and (min-width:600px){
+ 	.single-nav ul{
+ 		display: flex;
+ 		justify-content: flex-end;
+
+ 	}
+
+ 	.social-nav ul{
+ 		display: flex;
+ 		justify-content: flex-end;
+
+ 	}
+ }
+
+@media screen and (max-width: 599px){
+	.single-nav {
+		height:0px;
+		overflow: hidden;
+	}
+	
+	.single-nav li{
+		margin:.5em;
+		font-size: 2em;
+	}
+
+	.social-nav ul{
+ 		display: flex;
+ 		justify-content: flex-end;
+
+ 	}
+ 	nav a.mobile_menu{
+ 		display: block;
+ 	}
+	
+
+
+}
+
+
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: black;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: .5em;
+	font-family: 'EB Garamond', serif;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+
+
+
+
+/*typo for  CARD CONTENT*/
+
+.heading{
+	text-align: center;
+	    padding-top: .3em;
+}
+
+
+.card-content h2{
+	font-family: 'Cabin', sans-serif;
+}
+
+.card-content p{
+	font-family: 'EB Garamond', serif;
+}
+
+@media screen and (max-width: 600px){
+	.card-content h2{
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.5em;
+}
+	.card-content p{
+	font-size: 1.2em;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.card-content h2{
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.2em;
+}
+	.card-content p{
+	font-size: 1em;
+	}
+
+}
+
+ul li{
+  list-style-type: none;
+}
+
+header {
+    background: hsl(46, 100%, 50%);
+    position: relative;
+    height:150px;
+}
+
+h2{
+	margin-bottom: .5em;
+    margin-top: .1em;
+
+}
+h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

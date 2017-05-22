@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+.container1 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	    background-color: hsla(0, 0%, 100%, .2);
+	box-shadow: 2px 2px 2px #888;
+}
+
+@media screen and (min-width: 960px){
+	.container1{
+		width: 960px;
+	}
+}
+
+
+
+/*CONTACT SECTION FLEX BOX*/
+
+
+#mainContact{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-image: url(contactbig.jpg);
+	color: white;
+	margin-bottom: .2em;
+	height: 320px;
+}
+
+
+
+.info div{
+	text-align: center;
+	    padding-bottom: 0.5em;
+
+}
+
+.icon{
+	padding-top: .1em;
+	font-size: 4em;
+	padding-bottom: .3em;
+}
+
+.text p{
+	margin-top: .2em;
+	margin-bottom: .2em;
+}
+
+@media screen and (max-width: 700px){
+ #mainContact{
+ 	background-image: url(contactsmall.jpg);
+ 	height:600px;
+ 	display: block;
+ }
+.icon {
+    padding-top: .1em;
+    font-size: 2em;
+}
+
+.info{
+	display:block;
+	text-align: center;
+}
+}
+
+/*FOOTER STYLE*/
+.footer-area{
+	background-color: hsla(46, 100%, 50%, .8);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+
+#footerMenu{
+	flex: 0 1 calc(33% - 1em);
+}
+
+#copyRight{
+	flex: 0 1 calc(33% - 1em);
+}
+
+.social-media{
+	flex: 0 1 calc(33% - 1em);
+	
+}
+
+#quickNav li{
+	font-weight: bold;
+	font-size: 1em;
+	margin-left: -40px;
+}
+
+#quickNav li a:hover{
+text-decoration: underline;
+}
+
+
+.social-media a{
+font-size: 2em;
+padding-right:1em;
+	}
+
+
+@media screen and (max-width: 600px){
+	.footer-area{
+		display: flex;
+	}
+	.footer-area div{
+		margin-left: 3em;
+	}
+
+	#copyRight{ 
+		display: none;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
