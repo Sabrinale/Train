@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 var fs = require('fs');
-const port = process.envPORT|| 3000;
+const port = process.env.PORT|| 3000;
 //Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
 var bodyParser = require('body-parser');
 
