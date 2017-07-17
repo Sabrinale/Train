@@ -1,36 +1,23 @@
 <div class="container">
-
-        <form class="form-inline" action="/advancedSearch" method = "post">
+    <form class="form-inline"  method = "post">
             <div class="input-group">
                 <lable class="form-control-lable sr-only" for="search"></lable>
-
-                 <input ng-model="search" name = "name" type="text" id="search" class="form-control" placeholder="Search for books">
-
-            </div>
-        </form>
-
-        
-        
-    <div class="row">
-        <!-- <div class="item col-lg-4 col-md-6 col-sm-6 col-xs-12"> --> 
-                <div class="item col-lg-4 col-md-4 col-sm-6 col-xs-12" id="productlist1"
+                <input ng-model="search" name = "name" type="text" id="search" class="form-control" placeholder="Search">
+           </div>
+    </form>
+ <div class="row">
+      <div class="item col-lg-4 col-md-4 col-sm-6 col-xs-12" id="productlist1"
                      ng-repeat="product in products | filter : search" >
-                      <a href="#/books/{{$index}}"> 
-                    
-                    <img ng-src="{{product.img }}">
-                   
-                    
-                        <h7>Name : {{product.name}}</h7>
-                        </br>
-                        <h7>Author:  {{product.author}}</h7>
-                        </br>
-                        <h7>Topic:  {{product.topic}}</h7>
-                
-                    </a>
-
-
-                </div>
-        <!-- </div> -->
-    </div><!--closing row -->
+            <a href="#/currentmoving/{{$index}}"> </br>
+                <h7>Train: {{product.trainType}}-{{product.trainNumber}}</h7></br>
+                <h7>Station: From  {{product.timeTableRows[0].stationShortCode}}</h7>
+                <h7 >To {{product.timeTableRows[product.timeTableRows.length -1].stationShortCode}}</h7></br>
+                 <h7>Current-status:
+                  <span ng-if="product.runningCurrently === false">Not running  </span>
+                  <span ng-if="product.runningCurrently === true">Running  </span>
+                  </h7> </br>
+            </a>
+   </div> 
+  </div><!--closing row -->
 </div><!-- closing container -->
         

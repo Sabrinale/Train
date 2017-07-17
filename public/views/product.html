@@ -1,13 +1,18 @@
 
 <div class="row">
-        <section class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <img class="card-img-top img-fluid" ng-src="{{detail.img}}">
-            <div class="card-block">
-              <h5 class="card-title">{{detail.name}}</h2>
-              <h5 class="card-subtitle">Topic : {{detail.topic}}</h5>
-              <h5 class="card-text lifeStyle">Pages: {{detail.pages}}</h5>
-              <h5 class="card-link" href="#">Description : {{detail.description}}</h5>
-              <h5 class="card-link" href="#">Price: {{detail.price}}€</h5>
+        <section class="col-lg-12 col-md-4 col-sm-6 col-xs-12">
+            <!--<img class="card-img-top img-fluid" ng-src="{{detail.img}}">-->
+            <div >
+              <h5 class="card-title">Train: {{detail.trainType}}-{{detail.trainNumber}}</h5>
+             
+               
+               
+                  <h7 class="station">Station Lists </h7> <br/>
+                  <span  ng-repeat="x in detail.timeTableRows | unique:'stationShortCode'">
+                 <h7>{{x.stationShortCode}}</h7>                    
+                  </span><br/>
+                 <span class="item col-lg-6 col-md-4 col-sm-6 col-xs-12" ng-repeat="x in detail.timeTableRows" ><span ng-if="x.type =='DEPARTURE'">DEPARTURE:{{x.stationShortCode}} </span><span ng-if="x.type == 'ARRIVAL'">ARRIVAL: {{x.stationShortCode}}  </span>
+                   <br/>   </span><br/>
               <a href="#/">Back to main</a>
             </div><!-- card-block -->
         </section>

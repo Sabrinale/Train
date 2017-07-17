@@ -1,0 +1,27 @@
+
+<div class="row">
+        <section class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <!--<img class="card-img-top img-fluid" ng-src="{{detail.img}}">-->
+            <div class="card-block">
+            <h5 class ="station">Train 960 today</h5>
+              <h7 >Station:{{trains.journeySections[0].beginTimeTableRow.stationShortCode}}-{{trains.journeySections[0].endTimeTableRow.stationShortCode}}</h7><br/>
+                         
+              <h7 >Locomotive: {{trains.journeySections[0].locomotives[0].locomotiveType}}</h7><br/>
+              <h7 >Power type: {{trains.journeySections[0].locomotives[0].powerType}}</h7><br/>
+               <h7 class ="station" >Wagon types: </h7>
+            
+                  <h7  ng-repeat="x in trains.journeySections[0].wagons" >
+                       {{x.wagonType}},
+                    
+                  </h7><br/>
+                   
+              <h7 >Maxium speed: {{trains.journeySections[0].maximumSpeed}} KM/h</h7><br/>
+              <h7 >Total length:  {{trains.journeySections[0].totalLength}}</h7><br/>
+              <h7 class ="station">(If you do not see inforamtion, train 960 information does not run today)</h7><br/>
+              <!--<h5 class="card-text lifeStyle">Pages: {{detail.pages}}</h5>
+              <h5 class="card-link" href="#">Description : {{detail.description}}</h5>
+              <h5 class="card-link" href="#">Price: {{detail.price}}€</h5>-->
+              <a href="#/">Back to main</a>
+            </div><!-- card-block -->
+        </section>
+</div>

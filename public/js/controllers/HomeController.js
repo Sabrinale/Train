@@ -5,3 +5,5 @@ app.controller('HomeController', ['$scope', 'photos', function ($scope, photos) 
     });
 }]);
 console.log("home controller");
+
+

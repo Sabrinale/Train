@@ -1,0 +1,35 @@
+.station  {
+	color:#0275d8;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  
+}
+.train960 {
+	color:#0275d8;
+}
+.ng-binding {
+	color:#0275d8;
+}
+.inner-container {
+	padding: 10 px;
+
+
+}
+@media screen and (min-width: 600px){
+.inner-container .station{
+	padding-left: 5 px;
+
+
+}
+}
+
+
+@media screen and (max-width: 800px){
+  .inner-container .station {
+	padding-left: 5 px;
+
+
+}  
+}
